@@ -32,5 +32,5 @@ jobs:
           context: .
           push: true
           tags: |
-            myusername/myimage:${{ steps.git_tag.outputs.TAG_NAME }}
-            myusername/myimage:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGENAME }}:${{ steps.git_tag.outputs.TAG_NAME }}
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGENAME }}:latest
