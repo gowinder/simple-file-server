@@ -2,7 +2,7 @@ import os
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-VERSION='1.0.1'
+VERSION='1.0.2'
 STATIC_PATH=os.getenv('STATIC_PATH')
 
 app = FastAPI()
